@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"create-account/email"
+)
 
 func main() {
-    fmt.Println("Project jalan 🚀")
+	mail := email.GenerateEmail()
+	fmt.Println("Email:", mail)
 }
